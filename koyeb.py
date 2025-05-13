@@ -42,7 +42,7 @@ def login_koyeb(email, password):
     if not email or not password:
         return False, "邮箱或密码为空"
 
-    login_url = "https://app.koyeb.com/v1/account/login"
+    login_url = "https://app.koyeb.com/auth/signin"
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
